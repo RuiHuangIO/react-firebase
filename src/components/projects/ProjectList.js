@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectSummary from "./ProjectSummary";
+import { Link } from "react-router-dom";
 
 const ProjectList = ({ projects }) => {
   // add a checker to make sure projects is set
@@ -7,7 +8,11 @@ const ProjectList = ({ projects }) => {
     <div className="project-list section">
       {projects &&
         projects.map(project => {
-          return <ProjectSummary project={project} key={project.id} />;
+          return (
+            <Link to={"/project/" + project.id}>
+              <ProjectSummary project={project} key={project.id} />;
+            </Link>
+          );
         })}
     </div>
   );

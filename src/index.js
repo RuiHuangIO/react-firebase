@@ -21,7 +21,11 @@ const store = createStore(
       })
     ),
     reduxFirestore(fbConfig),
-    reactReduxFirebase(fbConfig, { attachAuthIsReady: true })
+    reactReduxFirebase(fbConfig, {
+      attachAuthIsReady: true,
+      useFirestoreForProfile: true,
+      userProfile: "users"
+    })
   )
 );
 // applyMiddleware takes in a list of middleware and turn into store enhancer

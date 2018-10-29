@@ -14,4 +14,4 @@ I have a few ideas on how this project can be done better and will probably play
 - Try Unstated or RXJS
 - Material UI instead of MaterializeCSS?
 - Implement better security practices before deployment
-- Try ReactHooks wheneve that comes out
+- Try ReactHooks whenever that comes out
